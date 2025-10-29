@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+    <form action="post">
+        <label for="nom">Veuillez saisir votre nom</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+        <label for="prenom">Veuillez saisir votre prenom</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        <label for="mail">Veuillez saisir votre adresse email</label><br>
+        <input type="email" name="email" id="email" placeholder="xsspsss@gmail.com"><br><br>
+        <label for="passwd">Veuillez saisir votre mot de passe</label><br>
+        <input type="password" name="password" id="passwd" required><br><br>
+        <label for="date">Veuillez saisir votre date de naissance</label><br>
+        <input type="date" name="date" id="date"><br><br>
+        <h4>Genre :</h4>
+        <div class="radio-group">
+            <label ><input type="radio" name="genre"> Homme</label>
+            <label ><input type="radio" name="genre"> Femme</label>
+        </div>
+        <h4>Centre d'interet:</h4>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Football</label>
+          <label><input type="checkbox"> Natation</label>
+          <label><input type="checkbox"> Taekwondo</label>
+          <label><input type="checkbox"> Basketball</label>
+          <label><input type="checkbox"> Autre</label>
+        </div>
+        <h4>Veuillez choisir votre pays:</h4><br>
+        <select name="pays" id="pays">
+            <optgroup label="Europe">
+                <option value="France">France</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Angleterre">Anglaterre</option>
+            </optgroup>
+            <optgroup label="Afrique">
+                <option value="Senegal">Senegal</option>
+                <option value="Mauritanie">Mauritanie</option>
+                <option value="togo">togo</option>
+                <option value="nigeria">nigeria</option>
+                <option value="libye">libye</option>
+            </optgroup>
+            <optgroup label="Amerique">
+                <option value="Etats-unies">Etats-unies</option>
+                <option value="Bresil">Bresil</option>
+                <option value="Canada">Canada</option>
+            </optgroup>
+        </select><br><br>
+        <label for="profil">Veuillez choisir une photo de profil</label><br>
+        <input type="file" name="file" id="profil"><br><br>
+        <input type="submit" value="S'inscrire">
+
+
+
+
+    </form>
+</body>
+</html>
